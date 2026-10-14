@@ -19,3 +19,30 @@ if (menuToggle && navLinks) {
 
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
+
+const linkedinProfileLink = document.getElementById("linkedinProfileLink");
+if (linkedinProfileLink) {
+  const profileUrl = (linkedinProfileLink.dataset.profileUrl || "").trim();
+
+  try {
+    const parsedUrl = new URL(profileUrl);
+    const isLinkedInProfile =
+      parsedUrl.protocol === "https:" &&
+      /(^|\.)linkedin\.com$/i.test(parsedUrl.hostname) &&
+      parsedUrl.pathname.startsWith("/in/");
+
+    if (isLinkedInProfile) {
+      linkedinProfileLink.href = parsedUrl.href;
+      linkedinProfileLink.target = "_blank";
+      linkedinProfileLink.rel = "noopener noreferrer";
+      linkedinProfileLink.removeAttribute("aria-disabled");
+      linkedinProfileLink.removeAttribute("tabindex");
+      linkedinProfileLink.classList.remove("is-unconfigured");
+
+      const urlNote = document.getElementById("linkedinUrlNote");
+      if (urlNote) urlNote.hidden = true;
+    }
+  } catch {
+    // Keep the profile entry inactive until a valid LinkedIn URL is added.
+  }
+}

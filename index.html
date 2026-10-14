@@ -15,7 +15,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="navbar" id="home">
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Suhaila Binte Akbar Ali, home">Suhaila <span>Akbar Ali</span></a>
+      <a class="brand" href="#home" aria-label="Suhaila Binte Akbar Ali, home">Suhaila Binte <span>Akbar Ali</span></a>
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">☰</button>
       <nav id="navLinks" aria-label="Main navigation">
         <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
@@ -25,25 +25,24 @@
   <main id="main">
     <section class="hero section">
       <div class="container hero-content">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> Year 2 · Applied AI &amp; Analytics · Singapore</p>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Year 2 · Applied AI &amp; Analytics · Nanyang Polytechnic</p>
         <h1>Suhaila Binte<br /><span>Akbar Ali</span></h1>
         <h2>Data Analytics &amp; AI Student <span class="headline-divider">|</span> Aspiring Data Analyst</h2>
-        <p class="subtitle">I enjoy turning data into useful insights and building thoughtful digital experiences. I’m developing my skills across analytics, predictive modelling and software projects.</p>
+        <p class="subtitle">I’m a Year 2 Applied AI &amp; Analytics student who enjoys turning data into clear insights and building useful digital experiences. I’m developing practical skills in data analytics, predictive modelling and software projects.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">View My Projects <span aria-hidden="true">↗</span></a>
           <a class="btn btn-outline" href="#contact">Contact Me</a>
           <a class="text-link" href="assets/resume.pdf" target="_blank" rel="noopener">View Resume <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="hero-note">Nanyang Polytechnic <span>·</span> Diploma in Applied AI &amp; Analytics</p>
+        <p class="hero-note">Diploma in Applied AI &amp; Analytics</p>
       </div>
-      <div class="hero-mark" aria-hidden="true"><span>DATA</span><span>IDEAS</span><span>IMPACT</span><i></i></div>
     </section>
 
     <section class="section section-about" id="about">
       <div class="container two-column">
         <div><p class="eyebrow">A little about me</p><h2 class="section-title">Curious about data.<br /><em>Driven to build.</em></h2></div>
         <div class="about-copy">
-          <p>I’m a Year 2 Diploma in Applied AI &amp; Analytics student at Nanyang Polytechnic. I’m interested in data analytics, AI and predictive modelling, alongside the software development that helps turn ideas into useful tools.</p>
+          <p>I’m a Year 2 Diploma in Applied AI &amp; Analytics student at Nanyang Polytechnic, building practical skills in data analytics, AI and predictive modelling. I enjoy turning data into clear insights and creating useful digital tools through software development.</p>
           <p>Through individual and team projects, I’ve worked with data preparation, visualisation, databases and web applications. I enjoy learning new tools, solving practical problems and contributing thoughtfully to a team.</p>
           <a class="inline-link" href="#projects">Explore selected work <span aria-hidden="true">→</span></a>
         </div>
@@ -56,38 +55,42 @@
         <div class="projects-list">
           <article class="project-card project-featured">
             <div class="project-meta"><span class="project-index">01</span><span class="project-type">Predictive analytics</span></div>
-            <div class="project-body"><div><h3>Predictive Analysis of Gym Member Calorie Expenditure</h3><p class="project-overview">A modelling project exploring how member characteristics and activity relate to calorie expenditure. The workflow covered data preparation, model comparison and recommendations.</p></div>
-              <div class="project-detail"><h4>My contribution</h4><p>Cleaned data, handled duplicates, encoded categorical variables and developed Linear Regression, Decision Tree and Random Forest models. Compared model evaluation results and identified four significant predictors in the final Linear Regression model.</p><p>The longer project record reports 4,865 source rows reduced to 973 unique records and an R-squared of 0.98 for the final model. This is the reported evaluation result and does not by itself establish performance on unseen data.</p>
-              <div class="badge-row"><span class="badge">KNIME</span><span class="badge">SAS Viya</span><span class="badge">SAS Visual Analytics</span><span class="badge">SAS Visual Statistics</span></div></div>
-              <figure class="screenshot-placeholder" aria-label="Screenshot placeholder for Gym Member Calorie Expenditure project"><span class="placeholder-icon" aria-hidden="true">▧</span><figcaption><strong>Project screenshot</strong><span>Add your model workflow or visualisation image</span><code>images/gym-calorie-analysis.png</code></figcaption></figure>
+            <div class="gym-project-intro"><div><h3>Predictive Analysis of Gym Member Calorie Expenditure</h3><p class="project-overview">This project explored how gym-member characteristics and exercise activity relate to calories burned per session. I prepared the dataset, compared predictive models and refined the Linear Regression model in SAS Viya.</p></div>
+              <div class="gym-contribution"><h4>My contribution</h4><p>I cleaned and transformed the data, investigated duplicate records, encoded categorical variables, developed and evaluated the models, and interpreted the findings for recommendations. KNIME was used for preparation, with modelling and evaluation in SAS Viya.</p><div class="badge-row"><span class="badge">KNIME</span><span class="badge">SAS Viya</span><span class="badge">SAS Visual Analytics</span><span class="badge">SAS Visual Statistics</span></div></div></div>
+            <div class="gym-results" aria-label="Reported Linear Regression model results"><div><span>Dataset after duplicate handling</span><strong>973 unique records</strong><small>4,865 source rows</small></div><div><span>Full Linear Regression</span><strong>R² 0.9798</strong><small>Validation ASE 1.7K · separate metric</small></div><div><span>Backward-selected model</span><strong>Validation ASE 1.6K</strong><small>Four retained predictors</small></div></div>
+            <div class="gym-gallery">
+              <figure class="gym-figure"><a class="gym-image-link" href="images/gym-data-preparation.png" target="_blank" rel="noopener" aria-label="Open larger KNIME data preparation screenshot"><img src="images/gym-data-preparation.png" alt="KNIME workflow for preparing the gym exercise dataset, including data cleaning and transformation steps." loading="lazy" /></a><figcaption><h4>Data Preparation Using KNIME</h4><p>I cleaned and transformed the gym-member exercise data, investigated duplicate records and encoded categorical variables before modelling. The report records 4,865 source rows reduced to 973 unique records after duplicate handling.</p><span class="image-caption">KNIME · Data preparation</span></figcaption></figure>
+              <figure class="gym-figure"><a class="gym-image-link" href="images/sas-linear-regression.png" target="_blank" rel="noopener" aria-label="Open larger SAS Viya Linear Regression screenshot"><img src="images/sas-linear-regression.png" alt="SAS Viya Fit Summary for the full Linear Regression model predicting Calories_Burned, with predictor significance, residual plot and training-validation assessment." loading="lazy" /></a><figcaption><h4>Final Linear Regression Model in SAS Viya</h4><p>The full model predicted <code>Calories_Burned</code> using a 70/30 training-validation split. The Fit Summary highlighted Session_Duration, Avg_BPM, Age and Male among the most significant predictors; the report gives R² = 0.9798 and Validation ASE = 1.7K for this full model.</p><span class="image-caption">SAS Viya · Full model · 973 observations</span></figcaption></figure>
+              <figure class="gym-figure"><a class="gym-image-link" href="images/sas-backward-selection.png" target="_blank" rel="noopener" aria-label="Open larger SAS Viya backward-selection screenshot"><img src="images/sas-backward-selection.png" alt="SAS Viya Fit Summary for the backward-selected Linear Regression model, showing Validation ASE 1.6K for 973 observations and four significant predictors." loading="lazy" /></a><figcaption><h4>Model Refinement Through Backward Selection</h4><p>Backward selection progressively removed less significant predictors using a 0.01 significance level. The report says the refined model retained Session_Duration, Avg_BPM, Male and Age, with Validation ASE of 1.6K, compared with 1.7K for the full model.</p><span class="image-caption">SAS Viya · Refined model · Validation ASE 1.6K</span></figcaption></figure>
             </div>
           </article>
-          <article class="project-card">
+          <article class="project-card efar-project">
             <div class="project-meta"><span class="project-index">02</span><span class="project-type">Team software project · NYP SCCCI AI Challenge</span></div>
-            <div class="project-body"><div><h3>EFAR Payroll Automation System</h3><p class="project-overview">A group-built payroll automation system. My individual work focused on the manager-facing approval workflow (UC-004).</p></div>
-              <div class="project-detail"><h4>My contribution</h4><p>Designed and developed the Payroll Approval Module with manager review, server-side validation, mandatory rejection comments and duplicate-approval prevention. The module blocks approval while calculations are incomplete, exposes REST API endpoints, maintains an audit-logged approval history and includes unit tests.</p><div class="badge-row"><span class="badge">React (Vite)</span><span class="badge">Node.js / Express</span><span class="badge">PostgreSQL</span><span class="badge">Docker</span></div></div>
-              <figure class="screenshot-placeholder" aria-label="Screenshot placeholder for EFAR Payroll Automation System"><span class="placeholder-icon" aria-hidden="true">▧</span><figcaption><strong>Project screenshot</strong><span>Add an approval workflow screen</span><code>images/efar-payroll.png</code></figcaption></figure>
+            <div class="efar-intro"><div><h3>EFAR Payroll Automation System</h3><p class="project-overview">Group Project — NYP SCCCI AI Challenge. A full-stack payroll automation system covering roster synchronisation, validation, calculation, approval and payment.</p></div>
+              <div class="project-detail"><h4>My contribution · UC-004</h4><p>I developed the Payroll Approval Module, enabling managers to review payroll summaries and employee-level payment details before recording decisions. I implemented server-side validation for mandatory rejection comments, duplicate-approval prevention and incomplete payroll calculations, plus REST API endpoints, transaction-safe database operations, audit-logged approval history and unit tests.</p><div class="badge-row"><span class="badge">React</span><span class="badge">Node.js</span><span class="badge">Express</span><span class="badge">PostgreSQL</span><span class="badge">Docker</span></div></div></div>
+            <div class="efar-gallery" aria-label="EFAR Payroll Approval Module screenshots">
+              <figure class="efar-figure"><a class="efar-image-link" href="images/efar-approval-dashboard.png" target="_blank" rel="noopener" aria-label="Open larger Payroll Approval Dashboard screenshot"><img src="images/efar-approval-dashboard.png" alt="EFAR UC-004 Payroll Approval Dashboard showing the payroll cycle, summary cards and employee payroll breakdown." loading="lazy" /></a><figcaption>Payroll Approval Dashboard</figcaption></figure>
+              <figure class="efar-figure"><a class="efar-image-link" href="images/efar-approve-workflow.png" target="_blank" rel="noopener" aria-label="Open larger Approve Payroll Workflow screenshot"><img src="images/efar-approve-workflow.png" alt="EFAR payroll approval decision form with the Approve payroll option selected." loading="lazy" /></a><figcaption>Approve Payroll Workflow</figcaption></figure>
+              <figure class="efar-figure"><a class="efar-image-link" href="images/efar-reject-workflow.png" target="_blank" rel="noopener" aria-label="Open larger Reject Payroll Workflow screenshot"><img src="images/efar-reject-workflow.png" alt="EFAR payroll rejection form with the Reject payroll option, rejection reason field and Reject payroll button." loading="lazy" /></a><figcaption>Reject Payroll Workflow</figcaption></figure>
+            </div>
+            <a class="efar-demo-placeholder" href="https://payroll-automation-three.vercel.app/dashboard" target="_blank" rel="noopener noreferrer">View Live Demo <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span class="project-index">03</span><span class="project-type">WEB APPLICATION</span></div>
+            <div class="project-body project-body-no-image"><div><h3>WhatsApp App – FAQ Knowledge Base</h3><p class="project-overview">A web-based FAQ knowledge base and category management system designed to organise support content efficiently.</p></div>
+              <div class="project-detail"><h4>My contribution</h4><p>Developed the FAQ Knowledge Base and Category Workspace pages, including FAQ creation, editing and deletion, search and filtering, dashboard KPI displays, and frontend-to-database integration.</p><div class="badge-row"><span class="badge">Python</span><span class="badge">Flask</span><span class="badge">SQLite</span><span class="badge">HTML / CSS</span><span class="badge">Bootstrap</span><span class="badge">Jinja2</span></div></div>
             </div>
           </article>
           <article class="project-card">
-            <div class="project-meta"><span class="project-index">03</span><span class="project-type">Web application</span></div>
-            <div class="project-body"><div><h3>WhatsUp App — FAQ Knowledge Base</h3><p class="project-overview">A web-based FAQ knowledge base and category management system for organising support content.</p></div>
-              <div class="project-detail"><h4>My contribution</h4><p>Built the FAQ Knowledge Base and Category Workspace pages, including FAQ creation, editing and deletion, search and filtering, dashboard KPI display, and frontend-to-database integration.</p><div class="badge-row"><span class="badge">Python</span><span class="badge">Flask</span><span class="badge">SQLite</span><span class="badge">HTML / CSS</span><span class="badge">Bootstrap</span><span class="badge">Jinja2</span></div></div>
-              <figure class="screenshot-placeholder" aria-label="Screenshot placeholder for WhatsUp App"><span class="placeholder-icon" aria-hidden="true">▧</span><figcaption><strong>Project screenshot</strong><span>Add your FAQ or category workspace screen</span><code>images/whatsup-app.png</code></figcaption></figure>
+            <div class="project-meta"><span class="project-index">04</span><span class="project-type">DATA PREPARATION &amp; VISUALISATION</span></div>
+            <div class="project-body project-body-no-image"><div><h3>Data Wrangling and Analysis</h3><p class="project-overview">A KNIME workflow for preparing and exploring customer data to support meaningful analysis and visualisation.</p></div>
+              <div class="project-detail"><h4>My contribution</h4><p>Merged and cleaned customer datasets, corrected invalid values and data types, applied data transformations, and anonymised data. Created visualisations to explore customer spending, income categories and purchase frequency.</p><div class="badge-row"><span class="badge">KNIME</span><span class="badge">Data Cleaning</span><span class="badge">Data Visualisation</span></div></div>
             </div>
           </article>
           <article class="project-card">
-            <div class="project-meta"><span class="project-index">04</span><span class="project-type">Data preparation &amp; visualisation</span></div>
-            <div class="project-body"><div><h3>Data Wrangling and Analysis</h3><p class="project-overview">A KNIME workflow preparing customer data for exploration and visualisation.</p></div>
-              <div class="project-detail"><h4>My contribution</h4><p>Merged and cleaned datasets, corrected invalid values and data types, applied transformations and anonymised data. Created visualisations exploring customer spending, income and purchase frequency.</p><div class="badge-row"><span class="badge">KNIME</span><span class="badge">Data cleaning</span><span class="badge">Data visualisation</span></div></div>
-              <figure class="screenshot-placeholder" aria-label="Screenshot placeholder for Data Wrangling and Analysis"><span class="placeholder-icon" aria-hidden="true">▧</span><figcaption><strong>Project screenshot</strong><span>Add a KNIME workflow or chart</span><code>images/data-wrangling.png</code></figcaption></figure>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-meta"><span class="project-index">05</span><span class="project-type">UI/UX design</span></div>
-            <div class="project-body"><div><h3>Nirvana Mobile UX Transformation</h3><p class="project-overview">A mobile experience redesign focused on mapping user needs into a clear, prioritised interface.</p></div>
-              <div class="project-detail"><h4>My contribution</h4><p>Mapped the user journey, prioritised features with the MoSCoW method and created an interactive mobile prototype.</p><div class="badge-row"><span class="badge">Figma</span><span class="badge">UI/UX design</span><span class="badge">Prototyping</span></div></div>
-              <figure class="screenshot-placeholder" aria-label="Screenshot placeholder for Nirvana Mobile UX Transformation"><span class="placeholder-icon" aria-hidden="true">▧</span><figcaption><strong>Project screenshot</strong><span>Add a screen from your Figma prototype</span><code>images/nirvana-ux.png</code></figcaption></figure>
+            <div class="project-meta"><span class="project-index">05</span><span class="project-type">UI/UX DESIGN</span></div>
+            <div class="project-body project-body-no-image"><div><h3>Nirvana Mobile UX Transformation</h3><p class="project-overview">A mobile experience redesign focused on understanding user needs and translating them into a clear, prioritised interface.</p></div>
+              <div class="project-detail"><h4>My contribution</h4><p>Mapped the user journey, prioritised features using the MoSCoW method, and developed an interactive mobile prototype in Figma.</p><div class="badge-row"><span class="badge">Figma</span><span class="badge">UI/UX design</span><span class="badge">Prototyping</span></div></div>
             </div>
           </article>
         </div>
@@ -119,13 +122,13 @@
 
     <section class="section section-experience" id="experience"><div class="container">
       <div class="section-heading"><div><p class="eyebrow">Beyond the classroom</p><h2 class="section-title">Experience &amp; activities</h2></div></div>
-      <div class="experience-grid"><article class="experience-card"><p class="eyebrow">Experience</p><h3>Digital Marketing &amp; Content Assistant</h3><p class="org">Farah Boutiques</p><p>Created social media content, wrote video scripts and captions, edited videos and designed promotional visuals using Canva and Adobe Photoshop.</p></article>
+      <div class="experience-grid"><article class="experience-card"><p class="eyebrow">Experience</p><h3>Digital Marketing &amp; Content Assistant</h3><p class="org">Farah Boutiques</p><ul class="experience-responsibilities"><li>Created social media content to promote abayas, hijabs and other boutique products across social media platforms.</li><li>Wrote engaging video scripts, promotional captions and product descriptions to support marketing campaigns and product launches.</li><li>Filmed and edited marketing videos using CapCut to showcase products and create engaging content for social media.</li><li>Designed promotional visuals and marketing materials using Canva and Adobe Photoshop, maintaining a consistent brand identity.</li><li>Supported social media marketing activities for new arrivals, seasonal collections and promotional campaigns.</li></ul></article>
         <article class="experience-card"><p class="eyebrow">Activities</p><ul class="activity-list"><li><span>NYP x AWS Hackathon</span><small>Participant</small></li><li><span>SIT Club</span><small>Subcommittee Member</small></li><li><span>Photography Club</span><small>Member</small></li></ul></article></div>
     </div></section>
 
-    <section class="section section-contact" id="contact"><div class="container contact-panel"><div><p class="eyebrow">Get in touch</p><h2 class="section-title">Let’s connect.</h2><p>I’m interested in Data Analytics and AI internship opportunities and collaborative projects. My contact details are on my resume.</p></div><div class="contact-actions"><a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noopener">View Resume <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="section section-contact" id="contact"><div class="container contact-panel"><div><p class="eyebrow">Get in touch</p><h2 class="section-title">Let’s connect.</h2><p>I’m interested in Data Analytics and AI internship opportunities and collaborative projects. My contact details are on my resume.</p></div><div class="contact-actions"><a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noopener">View Resume <span aria-hidden="true">↗</span></a><div class="linkedin-contact"><a class="text-link linkedin-profile-link is-unconfigured" id="linkedinProfileLink" data-profile-url="https://www.linkedin.com/in/suhaila-binte-akbar-ali-862995394" aria-disabled="true" tabindex="-1">View my LinkedIn profile <span aria-hidden="true">↗</span></a><small class="linkedin-url-placeholder" id="linkedinUrlNote">Profile URL not set. Add it to data-profile-url.</small></div></div></div></section>
   </main>
-  <footer class="footer"><div class="container footer-wrap"><a class="brand" href="#home">Suhaila <span>Akbar Ali</span></a><p>© <span id="year"></span> Suhaila Binte Akbar Ali</p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
+  <footer class="footer"><div class="container footer-wrap"><a class="brand" href="#home">Suhaila Binte <span>Akbar Ali</span></a><p>© <span id="year"></span> Suhaila Binte Akbar Ali</p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
